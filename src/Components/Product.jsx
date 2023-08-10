@@ -28,9 +28,10 @@ function Product(info) {
             <div className=' flex border rounded-xl object-cover p-2 w-[230px]'>
                 <img src={info.photo} alt={info.about} />
             </div>
-            <div className='flex flex-col justify-center items-center'>
+            <div className='flex flex-col justify-center items-center text-center'>
                 <div>
                     <p>{info.about}</p>
+                    <p>{info.price}$</p>
                 </div>
                 <div className='flex gap-[60px]'>
                     <button className='border border-black rounded-2xl p-[3px] w-[50px]' onClick={handleDecrease}>-</button>

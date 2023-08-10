@@ -17,12 +17,11 @@ function Basket() {
     }))
 
     const apranqner = useSelector(selectProduct)
-    console.log(apranqner);
     return (
         <div className='flex justify-around'>
           {
             apranqner.map((el)=>{
-                return <BasketProduct key={el.id} id={el.id} count={el.count} photo={el.photo} about={el.about} basketCount={el.basketCount}/>
+                return <BasketProduct key={el.id} id={el.id} count={el.count} photo={el.photo} about={el.about} basketCount={el.basketCount} price={el.price}/>
 
             })
           }
