@@ -6,8 +6,8 @@ function Product(info) {
     const dispatch = useDispatch()
 
 
-    const [initialCount] = useState(info.count)
-
+    const [initialCount] = useState(info.initialCount)
+   
 
     function handleIncrease() {
         dispatch(increaseProductCount({
